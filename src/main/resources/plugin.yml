@@ -1,0 +1,46 @@
+name: PlasmaCore
+version: 1.0.0
+main: com.plasma.core.PlasmaCore
+api-version: '1.21'
+author: Plasma
+description: Основной плагин сервера Plasma
+
+commands:
+  register:
+    description: Регистрация
+    aliases: [reg]
+  login:
+    description: Вход
+    aliases: [l]
+  home:
+    description: Телепорт домой
+  sethome:
+    description: Установить дом
+  delhome:
+    description: Удалить дом
+  homes:
+    description: Список домов
+  spawn:
+    description: Телепорт на спавн
+  setspawn:
+    description: Установить спавн
+    permission: plasma.admin
+  tpa:
+    description: Запрос телепорта
+  tpaccept:
+    description: Принять запрос
+  tpdeny:
+    description: Отклонить запрос
+  balance:
+    description: Баланс
+    aliases: [bal, money]
+  pay:
+    description: Перевод
+  plasmareload:
+    description: Перезагрузка
+    permission: plasma.admin
+
+permissions:
+  plasma.admin:
+    description: Права админа
+    default: op
